@@ -1,0 +1,32 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  padding: 0;
+
+  & li {
+    padding: 7px;
+    margin: 5px;
+    cursor: pointer;
+    background: grey;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      transition: all 0.3s ease-out;
+      background: orange;
+    }
+
+    &.selected {
+      color: white;
+      background: green;
+      transition: all 0.3s ease-out;
+    }
+
+
+  }
+}

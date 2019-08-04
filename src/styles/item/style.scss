@@ -1,0 +1,22 @@
+.item {
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Roboto, sans-serif;
+  margin: 30px 10px;
+
+  & li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & b {
+
+    }
+  }
+}
