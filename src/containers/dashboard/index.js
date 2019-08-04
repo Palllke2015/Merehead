@@ -33,7 +33,7 @@ class Dashboard extends Component {
         const indexOfLastElem = currentPage * itemsPerPage;
         const indexOfFirstElem = indexOfLastElem - itemsPerPage;
         const currentElems = data.users.slice(indexOfFirstElem, indexOfLastElem);
-        const renderTodos = currentElems.map(Item);
+        const renderElems = currentElems.map(Item);
 
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(data.users.length / itemsPerPage); i++) {
@@ -47,7 +47,7 @@ class Dashboard extends Component {
 
         return (
             <div className="dashboard">
-                {renderTodos}
+                {renderElems}
                 <ul className="pagination">
                     {renderPageNumbers}
                 </ul>
